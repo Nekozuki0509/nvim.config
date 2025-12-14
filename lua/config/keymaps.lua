@@ -3,21 +3,29 @@
 -- Add any additional keymaps here
 
 -- [[ Neovimの挙動 ]] --
+vim.g.mapleader = " "
 
--- インサートを抜ける
-vim.api.nvim_set_keymap("i", "jj", "<Esc>", { noremap = true, silent = true })
+vim.keymap.set({ "v", "i" }, "jj", "<Esc>", { noremap = true, silent = true })
 
-vim.api.nvim_set_keymap("v", "<Up>", "<nop>", {})
-vim.api.nvim_set_keymap("v", "<Down>", "<nop>", {})
-vim.api.nvim_set_keymap("v", "<Left>", "<nop>", {})
-vim.api.nvim_set_keymap("v", "<Right>", "<nop>", {})
+vim.keymap.set({ "v", "i", "n" }, "<Up>", "<nop>", {})
+vim.keymap.set({ "v", "i", "n" }, "<Down>", "<nop>", {})
+vim.keymap.set({ "v", "i", "n" }, "<Left>", "<nop>", {})
+vim.keymap.set({ "v", "i", "n" }, "<Right>", "<nop>", {})
 
-vim.api.nvim_set_keymap("i", "<Up>", "<nop>", {})
-vim.api.nvim_set_keymap("i", "<Down>", "<nop>", {})
-vim.api.nvim_set_keymap("i", "<Left>", "<nop>", {})
-vim.api.nvim_set_keymap("i", "<Right>", "<nop>", {})
+vim.keymap.set({ "n", "v", "i" }, "<C-h>", "^", {})
+vim.keymap.set({ "n", "v", "i" }, "<C-l>", "$", {})
 
-vim.api.nvim_set_keymap("n", "<Up>", "<nop>", {})
-vim.api.nvim_set_keymap("n", "<Down>", "<nop>", {})
-vim.api.nvim_set_keymap("n", "<Left>", "<nop>", {})
-vim.api.nvim_set_keymap("n", "<Right>", "<nop>", {})
+vim.keymap.set("n", "<CR>", "o<Esc>", {})
+
+vim.keymap.set("n", "<Leader>o", "<cmd>Oil<CR>", {})
+
+vim.keymap.set({ "v", "n" }, "dd", '"_dd', {})
+vim.keymap.set({ "v", "n" }, "x", '"_x', {})
+vim.keymap.set({ "v", "n" }, "D", '"_D', {})
+vim.keymap.set({ "v", "n" }, "c", '"_c', {})
+vim.keymap.set({ "v", "n" }, "C", '"_C', {})
+vim.keymap.set({ "v", "n" }, "<Leader>dd", "dd", {})
+vim.keymap.set({ "v", "n" }, "<Leader>x", "x", {})
+vim.keymap.set({ "v", "n" }, "<Leader>D", "D", {})
+vim.keymap.set({ "v", "n" }, "<Leader>c", "c", {})
+vim.keymap.set({ "v", "n" }, "<Leader>C", "C", {})
