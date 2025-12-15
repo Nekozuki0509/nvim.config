@@ -5,7 +5,7 @@
 -- [[ Neovimの挙動 ]] --
 vim.g.mapleader = " "
 
-vim.keymap.set({ "v", "i" }, "jj", "<Esc>", { noremap = true, silent = true })
+vim.keymap.set("i", "jj", "<Esc>", { noremap = true, silent = true })
 
 vim.keymap.set({ "v", "i", "n" }, "<Up>", "<nop>", {})
 vim.keymap.set({ "v", "i", "n" }, "<Down>", "<nop>", {})
