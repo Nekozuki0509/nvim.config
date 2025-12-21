@@ -29,3 +29,5 @@ vim.keymap.set({ "v", "n" }, "<Leader>x", "x", {})
 vim.keymap.set({ "v", "n" }, "<Leader>D", "D", {})
 vim.keymap.set({ "v", "n" }, "<Leader>c", "c", {})
 vim.keymap.set({ "v", "n" }, "<Leader>C", "C", {})
+
+vim.keymap.set("n", "<Leader>rn", vim.lsp.buf.rename)
