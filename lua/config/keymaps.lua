@@ -12,8 +12,8 @@ vim.keymap.set({ "v", "i", "n" }, "<Down>", "<nop>", {})
 vim.keymap.set({ "v", "i", "n" }, "<Left>", "<nop>", {})
 vim.keymap.set({ "v", "i", "n" }, "<Right>", "<nop>", {})
 
-vim.keymap.set({ "n", "v", "i" }, "<C-h>", "^", {})
-vim.keymap.set({ "n", "v", "i" }, "<C-l>", "$", {})
+vim.keymap.set({ "n", "v", "i" }, "<M-h>", "^", {})
+vim.keymap.set({ "n", "v", "i" }, "<M-l>", "$", {})
 
 vim.keymap.set("n", "<CR>", "o<Esc>", {})
 
