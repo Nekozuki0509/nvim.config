@@ -15,8 +15,6 @@ vim.keymap.set({ "v", "i", "n" }, "<Right>", "<nop>", {})
 vim.keymap.set({ "n", "v", "i" }, "<M-h>", "^", {})
 vim.keymap.set({ "n", "v", "i" }, "<M-l>", "$", {})
 
-vim.keymap.set("n", "<CR>", "o<Esc>", {})
-
 vim.keymap.set("n", "<Leader>o", "<cmd>Oil<CR>", {})
 
 vim.keymap.set({ "v", "n" }, "dd", '"_dd', {})
